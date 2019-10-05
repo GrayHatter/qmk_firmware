@@ -1,4 +1,6 @@
 /*
+This is the c configuration file for the keymap
+
 Copyright 2012 Jun Wako <wakojun@gmail.com>
 Copyright 2015 Jack Humbert
 
@@ -18,6 +20,43 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
+// place overrides here
+
+// If you need more program area, try select and reduce rgblight modes to use.
+
+// Selection of RGBLIGHT MODE to use.
+// #if defined(LED_ANIMATIONS)
+//    #define RGBLIGHT_EFFECT_BREATHING
+//    #define RGBLIGHT_EFFECT_RAINBOW_MOOD
+//    #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+//    #define RGBLIGHT_EFFECT_SNAKE
+//    #define RGBLIGHT_EFFECT_KNIGHT
+//    #define RGBLIGHT_EFFECT_CHRISTMAS
+//    #define RGBLIGHT_EFFECT_STATIC_GRADIENT
+//    #define RGBLIGHT_EFFECT_RGB_TEST
+//    #define RGBLIGHT_EFFECT_ALTERNATING
+// #endif
+/*
+Copyright 2012 Jun Wako <wakojun@gmail.com>
+Copyright 2015 Jack Humbert
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+#ifndef REV2_CONFIG_H
+#define REV2_CONFIG_H
+
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x3060
@@ -34,10 +73,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_I2C
 #define USE_SERIAL
 //#define USE_MATRIX_I2C
-
-/* Soft Serial defines */
-#define SOFT_SERIAL_PIN D2
-#define SERIAL_USE_MULTI_TRANSACTION
 
 /* Select hand configuration */
 #define MASTER_LEFT
@@ -146,6 +181,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_FUNCTION
 
 
+
 #define DISABLE_RGB_MATRIX_ALPHAS_MODS
 #define DISABLE_RGB_MATRIX_GRADIENT_UP_DOWN
 // #define DISABLE_RGB_MATRIX_BREATHING
@@ -185,4 +221,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 #define RGB_MATRIX_LED_FLUSH_LIMIT 32
+
+
+#endif // REV2_CONFIG_H
 
